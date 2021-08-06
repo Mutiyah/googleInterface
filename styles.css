@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a, p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .9em;
+}
+
+#top-menu{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+#middle{
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+#top-menu-row{
+    display: flex;
+    width: 20%;
+    height: auto;
+    overflow-y: visible;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.inner-top-menu-row{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.inner-top-menu-row span{
+    min-width: 5%;
+    padding: 1px 8px;
+
+}
+#top-menu-row span a{
+    font-size: 1em;
+
+}
+
+#top-menu-row span a:hover{
+    text-decoration: underline;
+}
+
+#top-menu-row span a{
+    text-decoration: none;
+    color: #000;
+}
+
+.google-logo a{
+    background-color: purple;
+    color: #fff !important;
+    padding: 4px 7px;
+    border-radius: 100%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* page-image section */
+/* page-image section */
+#page-image{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#page-image div{
+    width: 22%;
+    margin: auto;
+}
+
+#page-image img{
+    width: 100%;
+} 
+/* page-image section */
+/* page-image section */
+
+
+
+
+
+/* search-bar section */
+    #search-bar-row{
+        display: flex;
+    }
+
+
+
+
+
+/* how-you-feel section */
+#how-you-feel{
+    width: 22%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+#how-you-feel span p{
+    min-width: 100px;
+    background-color: rgb(248, 248, 248);
+    color: #000;
+    padding: 7px 1.1em;
+    border-radius: 5px;
+    font-size: .9em;
+}
+
+/* languages section */
+#languages{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    box-sizing: border-box;
+}
+#languages div{
+    display: flex;
+}
+
+#languages div span p, #languages div span a{
+    margin-right: 8px;
+    text-decoration: none;
+    color: rgb(14, 14, 165);
+}
+
+#languages div span p:hover, #languages div span a:hover{
+    text-decoration: underline .7px;
+    
+}
+
+
+#languages div span p{
+    color: #000;
+}
+
+
+/* search-bar section */
+#search-bar{
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar input{
+    outline: none;
+    height: 30px;
+    width: 40%;
+    padding: 25px 20px;
+    border-radius: 40px !important;
+    margin: 20px auto;
+    border: 0.1px solid #ccc;
+} 
+
+
+#search-bar-row input:focus-visible{
+    outline: none;
+    outline-color: #fff !important;
+}
+
+#top-menu-para{
+    /* opacity: 0; */
+   display: none;
+}
+
+.appear{
+    opacity: 1;
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    padding: 3px;
+}
+.top-menu-para2{
+    display: none;
+}
+
+/* footer-section  */
+#footer-section{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(241, 241, 241);
+
+}
+
+#footer-nigeria, #footer-bottom{
+    padding: 15px 20px;
+    
+}
+
+#footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer-bottom a, p{
+    padding-right: 12px;
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+}
+
+/* modal-section */
+#modal-section{
+    opacity: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 25vw;
+    height: 60vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 30px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+
+.modal-section-can{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal-section-can:last-child .modal-items{
+    padding-bottom: 0;
+}
+
+.modal-items{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.modal-items p{
+   padding-top: 5px;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    #footer-section{
+        margin-top: 4em;
+    }
+    
+   
+}
+
+@media screen and (max-width: 1010px) {
+    #top-menu-row{
+        width: 30%;
+    }
+
+    #how-you-feel{
+        width: 30%;
+    }
+
+    #modal-section{
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    #how-you-feel{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #how-you-feel{
+        width: 40%;
+    }
+
+    #search-bar input{
+        width: 82%;
+        margin: auto;
+        margin: 15px auto;
+    }
+
+    #modal-section{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* TOP MENU */
+    #top-menu{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    #top-menu-row{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .inner-top-menu-row{
+        justify-content: start;
+    }
+
+    .inner-top-menu-row:nth-child(2){
+        justify-content: flex-end;
+    }
+
+    #top-menu-row span{
+        padding: 2px 8px;
+    }
+
+    /* how-you-feel section */
+
+    #how-you-feel{
+        display: none;
+    }
+    
+    /* page-image section */
+    #page-image{
+        margin-top: 60px;
+    }
+
+    #page-image div{
+        width: 30%;
+    }
+
+
+    /* footer section */
+    #footer-bottom{
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+
+    #footer-bottom div{
+        padding-bottom: 15px;
+    }
+
+    .footer-carbon{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 500px) {
+/* TOP MENU */
+    #top-menu-row span{
+        font-size: .9em;
+    }
+
+    /* LANGUAGE SECTION */
+    #languages{
+        display: inline-block;
+        width: 94%;
+        margin: auto 3%;
+    }
+   
+
+    #languages div:first-child,  #languages div:nth-child(2){
+        width: fit-content;
+        margin: auto;
+    }
+
+    #modal-section{
+        width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #modal-section{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    #languages div span p, #languages div span a{
+        font-size: .7em;
+    }
+}
